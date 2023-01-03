@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    width:80%;
+    margin:auto;
+}
+.image{
+    background-image:linear-gradient(#19000018,#444444a1),url("https://t3.ftcdn.net/jpg/03/57/76/24/360_F_357762401_Q6IYG6rSR6yoy2mnBsOF3ZtuYVzBNARe.jpg");
+	background-position:center;
+	background-size:cover;
+	background-attachment:fixed;
+}
+h1{
+    color:aliceblue;
+    text-align: center;
+    padding:70px 0px;
+    font-size: 60px;
+    font-weight: 900;
+}
+.form-content{
+    width:50%; 
+    margin:auto;
+    border:1px solid white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding:10px;
+    box-shadow: 20px 20px 25px white;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+    display:inline-block;
+    margin-bottom: 5px;
+    color:aliceblue;
+    font-size: 20px;
+}
+.form-control input{
+    border:2px solid gray;
+    border-radius: 10px;
+    display: block;
+    font-size: 20px;
+    padding:10px;
+    width:100%;
+}
+.form-control.success input{
+    border-color:#2ecc71;
+}
+.form-control.error input{
+    border-color:red;
+}
+.form-control i{
+    visibility: hidden;
+    position:absolute;
+    top:40px;
+    right:10px;
+}
+.form-control.success i.fa-check-circle{
+    border-color:#2ecc71;
+    visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle{
+    border-color:red;
+    visibility: visible;
+}
+.form-control small{
+    color:red;
+    position:absolute;
+    left:0;
+    bottom:0;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}
+.form button{
+    background-color:whitesmoke;
+    border: none;
+    display: block;
+    font-size: 18px;
+    width:100%;
+    margin-top:20px;
+    padding:10px;
+    border-radius: 4px;
+}
+    </style>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="image">
+                    <h1>Application Form</h1>
+                    <div class="form-content">
+                    <form action="" class="form" id="form">
+                        <div class="form-control">
+                            <label for="">First Name</label>
+                            <input type="text" id="fname">
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span>Error Message</span>
+                        </div>
+                        <div class="form-control">
+                            <label for="">Last Name</label>
+                            <input type="text" id="lname">
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span>Error Message</span>
+                        </div>
+                        <div class="form-control">
+                            <label for="">E-mail</label>
+                            <input type="email" id="mail">
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span>Error Message</span>
+                        </div>
+                        <div class="form-control">
+                            <label for="">Password</label>
+                            <input type="password" id="pass">
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span>Error Message</span>
+                        </div>
+                        <div class="form-control">
+                            <label for="">Confirm Password</label>
+                            <input type="password" id="cpass">
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span>Error Message</span>
+                        </div>
+                        <button>Submit</button>
+                    </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="form.js"></script>
+</body>
+</html>
